@@ -27,12 +27,12 @@ jobs:
      - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
-          mkdir built-site  # Create the target directory if it doesn't exist
+          mkdir built-site 
           cp -R public/* built-site/
           cd built-site
           git init
           git add .
           git commit -m 'Updated site'
-          git remote add origin https://github.com/TranHap/TranHapBlog.git  # Update with your repository URL
+          git remote add origin https://github.com/TranHap/TranHapBlog.git 
           git checkout -b gh-pages
           git push origin gh-pages --force
