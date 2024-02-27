@@ -1,4 +1,9 @@
 baseURL = 'https://tranhap.github.io/TranHapBlog/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Tran Blog'
 theme = 'PaperMod'
+
+params:
+  homeInfoParams:
+    Title: Hello there!
+    Content: I just love writing. I hope that you love it, too!
