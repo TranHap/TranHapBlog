@@ -21,8 +21,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: Checkout destination
+        uses: actions/checkout@v3
+        if: github.ref == 'refs/heads/main'
         with:
-          submodules: recursive
+          ref: gh-pages
+          path: built-site
+
+      - name: Checkout source
+        uses: actions/checkout@v3
+        with:
+          submodules: true
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -38,9 +47,8 @@ jobs:
         run: hugo --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: site
           path: ./public
 
   deploy:
@@ -50,12 +58,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Checkout code and artifacts
-        uses: actions/checkout@v3
-        with:
-          repository: ${{ github.repository }}
-          path: built-site
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
