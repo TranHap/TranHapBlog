@@ -2,20 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/2/</loc>
+    <loc>https://tranhap.github.io/TranHapBlog/posts/4/</loc>
+    <lastmod>2024-02-27T23:01:26+07:00</lastmod>
+  </url><url>
+    <loc>https://tranhap.github.io/TranHapBlog/</loc>
+    <lastmod>2024-02-27T23:01:26+07:00</lastmod>
+  </url><url>
+    <loc>https://tranhap.github.io/TranHapBlog/posts/</loc>
+    <lastmod>2024-02-27T23:01:26+07:00</lastmod>
+  </url><url>
+    <loc>https://tranhap.github.io/TranHapBlog/posts/3/</loc>
+    <lastmod>2024-02-27T22:59:22+07:00</lastmod>
+  </url><url>
+    <loc>https://tranhap.github.io/TranHapBlog/posts/2/</loc>
     <lastmod>2024-02-27T22:57:09+07:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2024-02-27T22:57:09+07:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2024-02-27T22:57:09+07:00</lastmod>
-  </url><url>
-    <loc>/posts/1/</loc>
+    <loc>https://tranhap.github.io/TranHapBlog/posts/1/</loc>
     <lastmod>2024-02-27T21:24:57+07:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://tranhap.github.io/TranHapBlog/categories/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://tranhap.github.io/TranHapBlog/tags/</loc>
   </url>
 </urlset>
