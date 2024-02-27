@@ -3,7 +3,30 @@ languageCode = 'en-us'
 title = 'Tran Blog'
 theme = 'PaperMod'
 
-params:
-  homeInfoParams:
-    Title: Hello there!
-    Content: I just love writing. I hope that you love it, too!
+[params.homeInfoParams]
+Title = "Welcome to my blog"
+Content = "I love writing and sharing, hope you love it, too!"
+
+[params]
+ShowReadingTime = true
+ShowShareButtons = true
+ShowCodeCopyButtons = true
+author = ["Tran vo"]
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+
+  [[menu.main]]
+    name = "Search"
+    identifier = "search"
+    url = "/search"
+    weight = 1
+
+  [[menu.main]]
+    name = "Tags"
+    identifier = "tags"
+    url = "/archives"
+    weight = 2

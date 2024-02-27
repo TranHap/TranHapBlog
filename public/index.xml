@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>//uildDrafts:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Tran Blog</title>
+    <link>http://localhost:1313/TranHapBlog/</link>
+    <description>Recent content on Tran Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Feb 2024 21:24:57 +0700</lastBuildDate>
-    <atom:link href="//uildDrafts:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Feb 2024 23:01:26 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/TranHapBlog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4</title>
+      <link>http://localhost:1313/TranHapBlog/posts/4/</link>
+      <pubDate>Tue, 27 Feb 2024 23:01:26 +0700</pubDate>
+      <guid>http://localhost:1313/TranHapBlog/posts/4/</guid>
+      <description>Test again huhuhuhu</description>
+    </item>
+    <item>
+      <title>3</title>
+      <link>http://localhost:1313/TranHapBlog/posts/3/</link>
+      <pubDate>Tue, 27 Feb 2024 22:59:22 +0700</pubDate>
+      <guid>http://localhost:1313/TranHapBlog/posts/3/</guid>
+      <description>Test again haixzzz</description>
+    </item>
+    <item>
+      <title>2</title>
+      <link>http://localhost:1313/TranHapBlog/posts/2/</link>
+      <pubDate>Tue, 27 Feb 2024 22:57:09 +0700</pubDate>
+      <guid>http://localhost:1313/TranHapBlog/posts/2/</guid>
+      <description>Test post again huhu</description>
+    </item>
     <item>
       <title>1</title>
-      <link>//uildDrafts:1313/posts/1/</link>
+      <link>http://localhost:1313/TranHapBlog/posts/1/</link>
       <pubDate>Tue, 27 Feb 2024 21:24:57 +0700</pubDate>
-      <guid>//uildDrafts:1313/posts/1/</guid>
+      <guid>http://localhost:1313/TranHapBlog/posts/1/</guid>
       <description>###First test guys.
 Nice to meet</description>
+    </item>
+    <item>
+      <title>Tags</title>
+      <link>http://localhost:1313/TranHapBlog/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/TranHapBlog/tags/</guid>
+      <description>Explore posts based on the &amp;#39;Tag&amp;#39; category.</description>
     </item>
   </channel>
 </rss>
