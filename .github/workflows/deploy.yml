@@ -1,26 +1,19 @@
-name: Deploy Hugo site to Pages
-
+name: Publish to GH Pages
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  pull_request:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout source
         uses: actions/checkout@v3
+        with:
+          submodules: true
+
       - name: Checkout destination
         uses: actions/checkout@v3
         if: github.ref == 'refs/heads/main'
@@ -28,36 +21,22 @@ jobs:
           ref: gh-pages
           path: built-site
 
-      - name: Checkout source
-        uses: actions/checkout@v3
-        with:
-          submodules: true
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
           extended: true
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
-
       - name: Build
         run: hugo --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./public
-
       - name: Deploy
-            if: github.ref == 'refs/heads/main'
-            run: |
-              cp -R public/* ${GITHUB_WORKSPACE}/built-site/
-              cd ${GITHUB_WORKSPACE}/built-site
-              git add .
-              git config user.name 'dhij'
-              git config user.email 'davidhwang.ij@gmail.com'
-              git commit -m 'Updated site'
-              git push       
+        if: github.ref == 'refs/heads/main'
+        run: |
+          cp -R public/* ${GITHUB_WORKSPACE}/built-site/
+          cd ${GITHUB_WORKSPACE}/built-site
+          git add .
+          git config user.name 'dhij'
+          git config user.email 'davidhwang.ij@gmail.com'
+          git commit -m 'Updated site'
+          git push
