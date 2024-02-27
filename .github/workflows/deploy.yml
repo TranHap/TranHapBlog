@@ -33,6 +33,6 @@ jobs:
           git init
           git add .
           git commit -m 'Updated site'
-          git remote add origin https://github.com/YourUsername/YourRepo.git  # Update with your repository URL
+          git remote add origin https://github.com/TranHap/TranHapBlog.git  # Update with your repository URL
           git checkout -b gh-pages
           git push origin gh-pages --force
