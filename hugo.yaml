@@ -23,5 +23,5 @@ menu:
       weight: 1
     - name: "Tags"
       identifier: "tags"
-      url: "/TranHapBlog/archives"
+      url: "/TranHapBlog/tags"
       weight: 2
