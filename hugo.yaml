@@ -19,9 +19,9 @@ menu:
   main:
     - name: "Search"
       identifier: "search"
-      url: "/search"
+      url: "/TranHapBlog/search"
       weight: 1
     - name: "Tags"
       identifier: "tags"
-      url: "/archives"
+      url: "/TranHapBlog/archives"
       weight: 2
