@@ -1,0 +1,27 @@
+baseURL: "https://tranhap.github.io/TranHapBlog/"
+languageCode: "en-us"
+title: "Tran Blog"
+theme: "PaperMod"
+
+params:
+  homeInfoParams:
+    Title: "Welcome to my blog"
+    Content: "I love writing and sharing, hope you love it, too!"
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  author: ["Tran vo"]
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+
+menu:
+  main:
+    - name: "Search"
+      identifier: "search"
+      url: "/search"
+      weight: 1
+    - name: "Tags"
+      identifier: "tags"
+      url: "/archives"
+      weight: 2
